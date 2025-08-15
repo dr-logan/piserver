@@ -43,7 +43,7 @@ Guía práctica para instalar y configurar **OpenMediaVault 7 (OMV7)** en **Rasp
 ## ⚡ Instalación rápida (TL;DR)
 
 1) Flashea **Raspberry Pi OS Lite (64-bit)** en la microSD.  
-2) Arranca la Pi, obtén su **IP**.  
+2) Arranca la Pi, obtén su **IP** o usa **hostname.local**.  
 3) Conéctate por SSH y actualiza:
 
 ```bash
@@ -56,7 +56,7 @@ sudo apt update && sudo apt upgrade -y
 sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
 
-5) Abre en tu navegador: `http://IP_DE_TU_PI`  
+5) Abre en tu navegador: `http://IP_DE_TU_PI`  o `http://HOSTNAME.local` 
    - Usuario: **admin**  
    - Contraseña: **openmediavault**  
 
@@ -177,6 +177,3 @@ sudo omv-firstaid
 
 ---
 
-## 📄 Licencia
-
-MIT
